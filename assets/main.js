@@ -229,7 +229,7 @@ console.log(myMax(list)); // 233
  *
  * Создайте функцию myMul(a, b), которая будет умножать числа а и b, возвращая результат.
  */
-function myMull(a, b) {
+function myMul(a, b) {
   return a * b;
 }
 /*
@@ -237,7 +237,7 @@ function myMull(a, b) {
  * Использовать умножение или другие математические операции внутри функции – запрещено, только bind() и myMul().
  * Функция возвращает результат вычисления.
  */
-let myDouble = myMull.bind(null, 2);
+let myDouble = myMul.bind(null, 2);
 
 
 console.log(myDouble(3)); // = myMul(2, 3) = 6
@@ -247,7 +247,7 @@ console.log(myDouble(4)); // = myMul(2, 4) = 8
 console.log(myDouble(5)); // = myMul(2, 5) = 10
 
 // аналогичным образом создайте функцию myTriple(n), которая утраивает принимающий параметр, возвращая результат.
-let myTriple = myMull.bind(null, 3);
+let myTriple = myMul.bind(null, 3);
 
 
 console.log(myTriple(3)); // = myMul(3, 3) = 9
